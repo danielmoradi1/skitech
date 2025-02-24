@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { searchProducts, deleteProduct } from "../services/apiService";
-import Swal from "sweetalert2"; // Importera SweetAlert
+import Swal from "sweetalert2"; 
 import { TextField, Button } from "@mui/material";
-import ProductList from "./ProductList"; // Importera den nya komponenten
+import ProductList from "./ProductList"; 
 
 const SearchProduct = () => {
   const [query, setQuery] = useState("");

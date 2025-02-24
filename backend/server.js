@@ -105,12 +105,9 @@ app.delete("/api/products/:productId", async (req, res) => {
 
 
 
-
-// 📌 Se till att vi använder rätt port
 const PORT = process.env.SERVER_PORT || 5001;
 console.log(`Använder port: ${PORT}`);
 
-// 📌 Starta Express-servern
 app.listen(PORT, () =>
   console.log(`✅ Servern körs på http://localhost:${PORT}`)
 );
