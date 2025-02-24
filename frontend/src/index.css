@@ -1,0 +1,34 @@
+:root {
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(252, 252, 252);
+  background: linear-gradient(90deg, rgba(252, 252, 252, 1) 0%, rgba(158, 71, 246, 1) 0%, rgba(156, 29, 208, 1) 0%, rgba(70, 184, 225, 1) 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.eskitech-title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
