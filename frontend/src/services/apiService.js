@@ -12,13 +12,13 @@ export const uploadFile = async (file) => {
   return response.json();
 };
 
-// 📌 Hämta alla produkter
+// Hämta alla produkter
 export const fetchProducts = async () => {
   const response = await fetch(`${API_URL}/products`);
   return response.json();
 };
 
-// 📌 Sök produkter baserat på namn och/eller typ
+// Sök produkter baserat på namn och/eller typ
 export const searchProducts = async (query) => {
   const params = new URLSearchParams();
   if (query) params.append("query", query);
@@ -30,7 +30,7 @@ export const searchProducts = async (query) => {
 };
 
 
-// 📌 Radera en produkt från databasen
+// Radera en produkt från databasen
 export const deleteProduct = async (productId) => {
   const response = await fetch(`${API_URL}/products/${productId}`, {
     method: "DELETE",

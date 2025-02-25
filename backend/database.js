@@ -13,7 +13,7 @@ const pool = new Pool({
 // Kontrollera anslutning
 pool
   .connect()
-  .then(() => console.log("✅ Databasen är ansluten!"))
-  .catch((err) => console.error("❌ Fel vid databaskoppling:", err.message));
+  .then(() => console.log("Databasen är ansluten!"))
+  .catch((err) => console.error("Fel vid databaskoppling:", err.message));
 
 module.exports = pool;

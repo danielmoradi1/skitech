@@ -63,7 +63,6 @@ app.post("/api/upload", upload.single("file"), async (req, res) => {
       }
     });
 
-    // Kör en batch insert eller update
     for (let product of products) {
       await pool.query(
         `INSERT INTO products (product_id, product_name, type, price, quantity)
@@ -85,7 +84,7 @@ app.post("/api/upload", upload.single("file"), async (req, res) => {
 });
 
 
-// 📌 API: Radera en produkt baserat på product_id
+// Radera en produkt baserat på product_id
 app.delete("/api/products/:productId", async (req, res) => {
   try {
     const { productId } = req.params;
